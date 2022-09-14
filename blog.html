@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Monster | Blog</title>
+    <style>
+    table, th, td {
+    border:1px solid black;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <div id="blogs">
+            <div class="blog-item">
+                <h2>Session Storage vs. Local Storage: What Are the Differences?</h2>
+                <p>Both local and session storages are key-value stores, meaning that they both store data in a dictionary format. The
+                value of each key has to be a string, so if we have complex data structures like objects or arrays, we need to
+                serialize them using JSON strings.</p>
+                <h3>Differences :</h3>
+                <table style="width:100%;">
+                    <tr>
+                        <th>Local Storage</th>
+                        <th>Session Storage</th>
+                    </tr>
+                    <tr>
+                        <td> Local storage data does not expire when the user closes its browser window.</td>
+                        <td> Whereas session storage data gets cleared when the user closes its browser window.</td>
+                    </tr>
+                    <tr>
+                        <td>Page sessions are valid for only one tab at a time</td>
+                        <td>if a user has three tabs open, each one will have its own page session.</td>
+                    </tr>
+                    <tr>
+                        <td>As it is not session-based, it must be deleted via javascript or manually</td>
+                        <td>It’s session-based and works per window or tab. This means that data is stored only for the duration of a session, i.e.,
+                        until the browser (or tab) is closed</td>
+                    </tr>
+                    <tr>
+                        <td>The client can only read local storage</td>
+                        <td>The client can only read local storage</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="blog-item">
+                <h2>What is difference between block and global scope in JavaScript?</h2>
+                <p></p>
+            </div>
+            <div class="blog-item">
+                <h2>How does the Event Loop works in JavaScript?</h2>
+                <p></p>
+            </div>
+            <div class="blog-item">
+                <h2>How many ways we can determine undefine?</h2>
+                <p></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
